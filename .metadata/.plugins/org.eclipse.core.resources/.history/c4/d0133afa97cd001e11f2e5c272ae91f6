@@ -1,0 +1,23 @@
+package rahulshettyacademy.SeleniumFrameWorkDesign.Stepdesigns;
+
+import java.io.IOException;
+
+import io.cucumber.java.en.Given;
+import rahulshettyacademy.SeleniumFrameWorkDesign.Pageobject.LandingPage;
+import rahulshettyacademy.SeleniumFrameWorkDesign.Pageobject.ProductCatalogue;
+import rahulshettyacademy.SeleniumFrameWorkDesign.testcomponents.BaseTest;
+
+public class Stepdefitions extends BaseTest{
+	public LandingPage lp;
+	ProductCatalogue  pc;
+	@Given("I landed on Ecommerce page")
+	public void I_landed_on_Ecommerce_page() throws IOException {
+		lp=launchapplication();
+	}
+   @Given("^Logged in with username(.+) and password(.+)$")
+   public void Logged_in_with_username_and_password(String username,String password) {
+	   pc=lp.login(username,password);
+   }
+   @When("^I add productName(.+) in the cart$")
+   
+}

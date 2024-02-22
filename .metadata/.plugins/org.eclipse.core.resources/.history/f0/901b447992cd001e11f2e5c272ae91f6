@@ -1,0 +1,15 @@
+package rahulshettyacademy.SeleniumFrameWorkDesign.Stepdesigns;
+
+import java.io.IOException;
+
+import io.cucumber.java.en.Given;
+import rahulshettyacademy.SeleniumFrameWorkDesign.testcomponents.BaseTest;
+
+public class Stepdefitions extends BaseTest{
+	
+	@Given("I landed on Ecommerce page")
+	public void I_landed_on_Ecommerce_page() throws IOException {
+		launchapplication();
+	}
+
+}

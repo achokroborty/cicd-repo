@@ -1,0 +1,11 @@
+package Cucumber;
+
+import io.cucumber.testng.CucumberOptions;
+
+@CucumberOptions(features="src/test/java/Cucumber",glue="rahulshetty.SeleniumFrameWorkDesign.Stepdesigns")
+public class TestngTestrunner {
+	
+		
+	}
+
+

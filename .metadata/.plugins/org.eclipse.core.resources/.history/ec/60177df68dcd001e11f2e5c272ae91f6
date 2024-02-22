@@ -1,0 +1,17 @@
+
+@tag
+Feature: Purchase order from Ecommerce Website
+
+    
+  @tag2
+  Scenario Outline: End to End flow of Submitting order
+    Given Logged in with <username> and <password>
+    When I add <productName> in the cart
+    And checkout the <productName>
+    And Submit the order
+    Then "THANKYOU FOR THE ORDER." Validate success message
+
+    Examples: 
+      | username               | password | productName  |
+      | achokroborty@gmail.com | Ria@1991 | ZARA COAT 3  |
+      | name2 |     7 | Fail    |

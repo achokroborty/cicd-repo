@@ -1,0 +1,5 @@
+package rahulshettyacademy.SeleniumFrameWorkDesign.resources;
+
+public class ExtentReporterNG {
+
+}

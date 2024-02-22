@@ -1,0 +1,12 @@
+package rahulshettyacademy.SeleniumFrameWorkDesign.Testdata;
+
+import org.apache.commons.io.FileUtils;
+
+public class Datareader {
+
+	public void getJsonDataToMap() {
+		
+		String jsoncontent=FileUtils.readFileToString(new File(System.getProperty("user.dir"))+"//src//test//java//rahulshettyacademy//SeleniumFrameWorkDesign//Testdata//purchase.json");
+		
+	}
+}
